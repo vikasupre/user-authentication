@@ -1,0 +1,10 @@
+Hi {{user}}
+You're receiving this email because you need to finish the activation process on SaaSitive.
+
+{% comment %} Please go to the following page to activate account:
+http://testserver/activate/MQ/afc0m5-e3336fd5fa02874a588c9085d9bdf881 {% endcomment %}
+
+Please click on the link below to activate your account.
+http://{{domain}}{% url 'activate' uidb64=uid token=token  %}
+
+Thanks for using our site!
